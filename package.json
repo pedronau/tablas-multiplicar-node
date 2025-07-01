@@ -1,0 +1,23 @@
+{
+  "name": "tablas-multiplicar-node",
+  "version": "1.0.0",
+  "description": "Mi primera aplicación con Nodejs. Mi primera experiencia con una app de consola y mi primera experiencia de testing.",
+  "keywords": [
+    "nodejs",
+    "testing",
+    "junior",
+    "web"
+  ],
+  "license": "ISC",
+  "author": "Pedro",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/app.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
