@@ -14,7 +14,7 @@ export const argumentos = yargs(hideBin(process.argv))
     default: 10,
     describe: "rango de la tabla de multiplicar",
   })
-  .option("name", {
+  .option("h", {
     alias: "nombre",
     type: "string",
     default: "tabla-multiplicar",
