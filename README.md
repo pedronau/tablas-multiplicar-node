@@ -29,3 +29,4 @@ Comando de ejemplo a introducir: "npm run dev -- -n 5 -l 20"
 - Patrón adaptador con librerías de terceros.
 - Separación de prioridades usando "import" y "export". Para separar todo en distintos archivos.
 - Trabajar con el paquete nativo "fs" de Node y así poder leer y escribir archivos.
+- Testing con la librería Jest.
