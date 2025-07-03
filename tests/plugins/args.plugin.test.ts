@@ -20,3 +20,39 @@ describe("args.plugin.ts", () => {
     );
   });
 });
+
+describe("args.plugin.ts", () => {
+  const originalArgv = process.argv;
+
+  beforeEach(() => {
+    process.argv = originalArgv;
+    jest.resetModules();
+  });
+
+  test("debe retornar valores personalizados", async () => {
+    const nombreArchivoTest = "tabla-test";
+    const nombreCarpetaTest = "carpeta-test";
+
+    const opcionesPersonalizadas = [
+      "-n",
+      "7",
+      "-l",
+      "25",
+      "-h",
+      nombreArchivoTest,
+      "-d",
+      nombreCarpetaTest,
+    ];
+
+    const argumentos = await comando(opcionesPersonalizadas);
+
+    expect(argumentos).toEqual(
+      expect.objectContaining({
+        n: 7,
+        l: 25,
+        h: nombreArchivoTest,
+        d: nombreCarpetaTest,
+      })
+    );
+  });
+});
