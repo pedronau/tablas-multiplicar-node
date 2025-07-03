@@ -28,7 +28,7 @@ export const argumentos = yargs(hideBin(process.argv))
   })
   .check((argv) => {
     if (argv.n < 1) {
-      throw "Error: el numero debe ser mayor que 0";
+      throw new Error("Error: el numero debe ser mayor que 0") ;
     } else {
       return true;
     }

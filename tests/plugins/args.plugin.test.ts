@@ -1,4 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
+import { error } from "console";
 
 const comando = async (args: string[]) => {
   process.argv = [...process.argv, ...args];
@@ -7,6 +8,13 @@ const comando = async (args: string[]) => {
 };
 
 describe("args.plugin.ts", () => {
+  const originalArgv = process.argv;
+
+  beforeEach(() => {
+    process.argv = originalArgv;
+    jest.resetModules();
+  });
+
   test("debe retornar los valores por defecto", async () => {
     const argumentos = await comando(["-n", "5"]);
 
@@ -18,15 +26,6 @@ describe("args.plugin.ts", () => {
         d: "outputs",
       })
     );
-  });
-});
-
-describe("args.plugin.ts", () => {
-  const originalArgv = process.argv;
-
-  beforeEach(() => {
-    process.argv = originalArgv;
-    jest.resetModules();
   });
 
   test("debe retornar valores personalizados", async () => {
