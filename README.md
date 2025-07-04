@@ -20,11 +20,11 @@ Esto nos mostrará una serie de comandos que podemos introducir para poder inter
 - h: Nombre del archivo .txt que vamos a crear (por defecto "tabla-multiplicar").
 - d: Destino del archivo .txt que vamos a crear (por defecto la carpeta "outputs", si no la tienes la crea).
 
-Comando de ejemplo a introducir: "npm run dev -- -n 5 -l 20"
+        Comando de ejemplo a introducir: "npm run dev -- -n 5 -l 20"
 
 4. Probar la ejecución de los test automáticos:
 
-Comando a introducir: "npm run test"
+        Comando a introducir: "npm run test"
 
 ## Aspectos aprendidos con este ejercicio
 
