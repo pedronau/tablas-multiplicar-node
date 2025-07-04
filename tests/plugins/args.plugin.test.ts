@@ -1,5 +1,4 @@
 import { describe, expect, test } from "@jest/globals";
-import { error } from "console";
 
 const comando = async (args: string[]) => {
   process.argv = [...process.argv, ...args];
@@ -7,7 +6,7 @@ const comando = async (args: string[]) => {
   return argumentos;
 };
 
-describe("args.plugin.ts", () => {
+describe("Test args.plugin.ts", () => {
   const originalArgv = process.argv;
 
   beforeEach(() => {

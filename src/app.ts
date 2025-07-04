@@ -16,5 +16,3 @@ function main() {
 }
 
 main();
-
-//TODO: implementar el testing automatico

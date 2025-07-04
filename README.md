@@ -22,6 +22,10 @@ Esto nos mostrará una serie de comandos que podemos introducir para poder inter
 
 Comando de ejemplo a introducir: "npm run dev -- -n 5 -l 20"
 
+4. Probar la ejecución de los test automáticos:
+
+Comando a introducir: "npm run test"
+
 ## Aspectos aprendidos con este ejercicio
 
 - Trabajar con parametros gracias a la librería "yargs".
